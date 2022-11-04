@@ -9,7 +9,9 @@ const countWords = (text) => {
         character === " " && numWords ++; 
     });
 
-    document.getElementById('darkPost-wordCounter').innerHTML = numWords;
+    const wordsWord = numWords === 1 ? 'word' : 'words';
+    const countWordsString = numWords + ' ' + wordsWord;
+    document.getElementById('darkPost-wordCounter').innerHTML = countWordsString;
 };
 
 const darkPostAutoSaver = () => {
