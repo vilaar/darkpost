@@ -4,10 +4,10 @@ const copyToClipboard = () => {
 };
 
 const countWords = () => {
-    const text = document.getElementById('darkPost-textArea').value;
+    const text = Array.from(document.getElementById('darkPost-textArea').value);
     let numWords = 0;
     
-    if (text !== '') text.forEach(character => {
+    if (text.length > 0) text.forEach(character => {
         character === " " && numWords ++; 
     });
 
