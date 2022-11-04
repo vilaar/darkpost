@@ -9,8 +9,8 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <textarea id="darkPost-textArea"></textarea>
+    <textarea id="darkPost-textArea" onkeyup="darkPostAutoSaver()"></textarea>
     <div id="darkPost-wordCounter"></div>
-    <button id="darkPost-button">Copy</button>
+    <button id="darkPost-button" onclick="copyToClipboard()">Copy</button>
 </body>
 </html>
