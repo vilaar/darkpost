@@ -12,6 +12,8 @@ body, #darkPost-textArea {
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: system-ui;
 }
 
 #darkPost-wordCounter {
