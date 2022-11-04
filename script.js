@@ -1,5 +1,5 @@
-const copyToClipboard = (text) => {
-    document.getElementById(text);
+const copyToClipboard = () => {
+    document.getElementById('#darkPost-textArea');
     document.execCommand('copy');
 };
 
