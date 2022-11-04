@@ -15,15 +15,28 @@ body, #darkPost-textArea {
 }
 
 #darkPost-wordCounter {
-    display: relative;
-    float: left;
-    clear: both;
-    width: 40%;
+    height: 50px;
+    position: relative;
+    width: 48%;
+    border: 1px solid #F1EFEF;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 #darkPost-button {
-    display: relative;
     float: right;
     clear: both;
-    width: 40%;
+    width: 48%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
