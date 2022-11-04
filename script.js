@@ -1,6 +1,7 @@
 const copyToClipboard = () => {
     document.getElementById('darkPost-textArea').select();
     document.execCommand('copy');
+    document.getSelection().removeAllRanges();
 };
 
 const countWords = () => {
