@@ -1,0 +1,25 @@
+body {
+    backgroundColor: #4A4A4A;
+    color: #F1EFEF;
+}
+
+#darkPost-textArea {
+    width: 100%;
+    padding: 20px;
+    height: calc(100vh - 100px);
+    display: block;
+}
+
+#darkPost-wordCounter {
+    display: relative;
+    float: left;
+    clear: both;
+    width: 40%;
+}
+
+#darkPost-Button {
+    display: relative;
+    float: right;
+    clear: both;
+    width: 40%;
+}
