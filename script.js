@@ -5,19 +5,12 @@ const copyToClipboard = () => {
 };
 
 const countWords = () => {
-    const text = Array.from(document.getElementById('darkPost-textArea').value);
-    let numWords = 0;
+    const numWords = document.getElementById('darkPost-textArea').value.split(/\S+/).length - 1 || 0;
     
-    if (text.length > 0) {
-        if (numWords === 0) numWords ++;
-        
-        text.forEach((character) => {
-            character === " " && numWords ++
-        });
-    };
-
     const wordsWord = numWords === 1 ? 'word' : 'words';
+    
     const countWordsString = numWords + ' ' + wordsWord;
+    
     document.getElementById('darkPost-wordCounter').innerHTML = countWordsString;
 };
 
