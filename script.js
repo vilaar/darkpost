@@ -1,5 +1,5 @@
 const copyToClipboard = () => {
-    document.getElementById('darkPost-textArea');
+    document.getElementById('darkPost-textArea').select();
     document.execCommand('copy');
 };
 
