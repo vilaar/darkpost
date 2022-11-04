@@ -11,7 +11,9 @@ const countWords = () => {
     if (text.length > 0) {
         if (numWords === 0) numWords ++;
         
-        text.forEach(character => character === " " && numWords ++);
+        text.forEach((character) => {
+            character === " " && numWords ++
+        });
     };
 
     const wordsWord = numWords === 1 ? 'word' : 'words';
