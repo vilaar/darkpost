@@ -26,9 +26,13 @@ const darkPostAutoSaver = () => {
     countWords();
 }
 
-window.onload = (event) => {
+const darkPostInitializer = () => {
     const savedText = localStorage.getItem('darkPostText');
     document.getElementById('darkPost-textArea').innerHTML = savedText;
     
     countWords();
+}
+
+window.onload = (event) => {
+    darkPostInitializer();
 };
