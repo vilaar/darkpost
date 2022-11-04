@@ -8,9 +8,11 @@ const countWords = () => {
     const text = Array.from(document.getElementById('darkPost-textArea').value);
     let numWords = 0;
     
-    if (text.length > 0) text.forEach(character => {
-        character === " " && numWords ++; 
-    });
+    if (text.length > 0) {
+        if (numWords === 0) numWords ++;
+        
+        text.forEach(character => character === " " && numWords ++; );
+    };
 
     const wordsWord = numWords === 1 ? 'word' : 'words';
     const countWordsString = numWords + ' ' + wordsWord;
